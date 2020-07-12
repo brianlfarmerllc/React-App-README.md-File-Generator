@@ -6,12 +6,16 @@
     border-radius: 4px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    margin: 100px auto 10px;
+    margin: 100px auto 100px;
     overflow: hidden;
     padding: 3em
   }
- 
-  .form-group {
+  
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .form-group{
     margin: 0 0 20px;
   }
   .form-group:last-child {
@@ -29,7 +33,7 @@
     letter-spacing: .2em;
   }
  
-  .form-group input {
+  .form-group input, .form-group textarea {
     outline: none;
     display: block;
     background: rgba(0, 0, 0, 0.1);
@@ -41,7 +45,7 @@
     color: rgba(0, 0, 0, 0.6);
     font-weight: 500;
   }
- 
+
   .form-group button {
     outline: none;
     background: #418ce0;
@@ -65,8 +69,8 @@
     text-transform: uppercase;
   }
 
-  .cp-fab {
+  /* .cp-fab {
     background: #FFFFFF !important;
     color: #4285F4 !important;
-  }
+  } */
   

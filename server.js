@@ -1,10 +1,12 @@
 const express = require("express");
-// const routes = require("./routes");
+const routes = require("./routes");
+const logger = require('morgan');
 
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
 const app = express();
+app.use(logger('dev'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
@@ -15,6 +17,9 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 // app.use(routes);
 
+app.post("/createfile", function (req, res) {
+  console.log(req.body)
+})
 
 // Start the API server
 app.listen(PORT, () => {

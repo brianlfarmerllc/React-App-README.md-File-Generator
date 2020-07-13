@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./form.css"
 import API from "../../utils/API"
 
-function Form1() {
+function Form() {
     const initalForm = {}
     const [form, setForm] = useState(initalForm);
 
@@ -135,4 +135,4 @@ function Form1() {
     )
 }
 
-export default Form1
+export default Form

@@ -4,8 +4,8 @@
     height: 100%;
   } */
   
-  html, body {
+  html, main {
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 0%,rgba(66, 245, 189,0.4) 100%);
+    background: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 40%,rgba(66, 245, 189,0.4) 100%);
   }

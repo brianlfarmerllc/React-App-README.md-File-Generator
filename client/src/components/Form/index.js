@@ -3,7 +3,7 @@ import "./form.css"
 
 function Form(props) {
     return (
-        <div className="row justify-content-center">
+        <div className="row justify-content-center" style={{marginBottom:"0"}}>
             <div className=" col-11 col-xl-8">
                 <div className="form">
                     <div className="form-header">

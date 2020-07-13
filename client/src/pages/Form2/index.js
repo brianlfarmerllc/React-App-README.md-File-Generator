@@ -1,5 +1,4 @@
 import React from 'react';
-import "./form.css";
 import API from "../../utils/API";
 import Form from "../../components/Form";
 import { useHistory } from "react-router-dom";

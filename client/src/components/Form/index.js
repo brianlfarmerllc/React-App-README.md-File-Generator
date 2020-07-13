@@ -1,7 +1,7 @@
 import React from 'react'
 import "./form.css"
 
-function Form() {
+function Form(props) {
     return (
         <div className="row justify-content-center">
             <div className=" col-11 col-xl-8">

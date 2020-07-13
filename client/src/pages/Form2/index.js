@@ -1,28 +1,27 @@
-import React from 'react'
-import "./form.css"
-import API from "../../utils/API"
-import { Input, FormBtn, Text } from "../../components/FormComponents"
+import React from 'react';
+import "./form.css";
+import API from "../../utils/API";
+import Form from "../../components/Form";
+import { useHistory } from "react-router-dom";
+import { Input, FormBtn, Text } from "../../components/FormComponents";
 
 function Form1({form, handleChange}) {
+    let history = useHistory();
 
     function handleSubmit(event) {
         event.preventDefault()
         API.createReadme(form)
-            .then(res => console.log("success"))
+            .then(res => {
+                console.log("success")
+                history.push("/done")
+            })
             .catch(err => {
                 console.error(err);
             })
     }
 
     return (
-        <div className="row justify-content-center">
-            <div className=" col-11 col-xl-8">
-                <div className="form">
-                    <div className="form-header">
-                        <h1>readme generator</h1>
-                    </div>
-                    <div className="form-content">
-                        <form>
+      <Form>
                             <Input
                                 htmlFor={"path"}
                                 label={"gif or image path"}
@@ -56,11 +55,7 @@ function Form1({form, handleChange}) {
 
                             <FormBtn onClick={handleSubmit}>create readme</FormBtn>
 
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+           </Form>
     )
 }
 

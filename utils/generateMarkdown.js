@@ -11,7 +11,6 @@ function generateMarkdown(data) {
   ## Table of Contents
   
   * [Installation](#Installation)
-  * [Test](#Test)
   * [Usage](#Usage)
   * [Technologies](#Technologies)
   * [License](#License)
@@ -21,15 +20,13 @@ function generateMarkdown(data) {
 
   ${data.install}
 
-  ## Test
-
-  ${data.test}
-
   ## Usage
+
+  ${data.usage}
 
   The following image demonstrates the application functionality:
 
-  ![Add Description !!!!!!](${data.usage})
+  ![Add Description !!!!!!](${data.path})
 
   ## Technologies
 
@@ -45,14 +42,13 @@ function generateMarkdown(data) {
 
   Contributor information and commit history can be seen here!
   <a href="https://github.com/${data.repo}/graphs/contributors">
-    <img src="https://contributors-img.web.app/image?repo=${data.name}/${data.title}" />
+    <img src="https://contributors-img.web.app/image?repo=${data.username}/${data.title}" />
   </a>
 
-  Made with [contributors-img](https://contributors-img.web.app).
 
   ## Questions
 
-  If you have any questions about the application you can contact ${data.name} directly @ ${data.email}
+  If you have any questions about the application you can contact ${data.username} directly @ ${data.email}
   `;
 }
 

@@ -23,16 +23,16 @@ if (process.env.NODE_ENV === "production") {
 app.post("/createfile", function (req, res) {
   const OUTPUT_DIR = path.resolve(__dirname, "output");
   const outputPath = path.join(OUTPUT_DIR, "README.md");
+
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR)
   }
-  fs.writeFile(outputPath, generateMarkdown(req.body), function (err) {
-
+  fs.writeFile(outputPath, generateMarkdown(req.body), err => {
     if (err) {
       return console.log(err);
     }
-
-  })
+  });
+  return res.json({})
 })
 
 // Start the API server

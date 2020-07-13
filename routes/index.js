@@ -1,10 +1,27 @@
 const path = require("path");
+const fs = require('fs');
+const generateMarkdown = require("../utils/generateMarkdown");
 const router = require("express").Router();
 const apiRoutes = require("./api")
 
 router
-    .route("/createfile")
-    .post((req, res) => res.json("you did it"))
+  .route("/createfile")
+  .post((req, res) => {
+    const OUTPUT_DIR = path.resolve(__dirname, "../output");
+    const outputPath = path.join(OUTPUT_DIR, "README.md");
+
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR)
+    }
+
+    fs.writeFile(outputPath, generateMarkdown(req.body), err => {
+      if (err) {
+        return console.log(err);
+      }
+    });
+
+    return res.json({});
+  })
 
 // If no API routes are hit, send the React app
 router.use((req, res) => {

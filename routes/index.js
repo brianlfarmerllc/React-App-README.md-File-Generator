@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require('fs');
 const generateMarkdown = require("../utils/generateMarkdown");
 const router = require("express").Router();
-const apiRoutes = require("./api")
+// const apiRoutes = require("./api")
 
 router
   .route("/createfile")
@@ -21,6 +21,16 @@ router
     });
 
     return res.json({});
+  })
+
+router
+  .route("/download")
+  .get((req, res) => {
+    res.download("./output/README.md", "README.md", err => {
+      if (err) {
+        return console.log(err);
+      }
+    })
   })
 
 // If no API routes are hit, send the React app

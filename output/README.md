@@ -1,51 +1,46 @@
 
-  # undefined
+# React_PWA_ReadMeFormatter
 
-  [![GitHub license](https://img.shields.io/badge/license-undefined-blue.svg)](undefined)
+[![GitHub license](https://img.shields.io/badge/license-afsdfsfd-blue.svg)](https://github.com/brianlfarmerllc/React_PWA_ReadMeFormatter)
   
-  ## Description
+## Description
 
-  undefined
+asdfasf
 
-  ## Table of Contents
+## Table of Contents
   
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Technologies](#Technologies)
-  * [License](#License)
-  * [Contributions](#Contributions)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Technologies](#Technologies)
+* [License](#License)
+* [Contributions](#Contributions)
   
-  ## Installation
+## Installation and Usage
 
-  undefined
+sdfasdfa
 
-  ## Usage
+The following image demonstrates the application functionality:
 
-  undefined
+![Demo of React_PWA_ReadMeFormatter!](afsdfsdf)
 
-  The following image demonstrates the application functionality:
+## Technologies
 
-  ![Add Description !!!!!!](undefined)
+The following technologies were used in the developement of the application
 
-  ## Technologies
+asdfdfafsdf
 
-  The following technologies were used in the developement of the application
+## License
 
-  undefined
+This application is licensed under the afsdfsfd license
 
-  ## License
+## Contributors
 
-  This application is licensed under the undefined license
-
-  ## Contributors
-
-  Contributor information and commit history can be seen here!
-  <a href="https://github.com/undefined/graphs/contributors">
-    <img src="https://contributors-img.web.app/image?repo=undefined/undefined" />
-  </a>
+Contributor information and commit history can be seen here!
+<a href="https://github.com/https://github.com/brianlfarmerllc/React_PWA_ReadMeFormatter/graphs/contributors">
+<img src="https://contributors-img.web.app/image?repo=brianlfarmerllc/React_PWA_ReadMeFormatter" />
+</a>
 
 
-  ## Questions
+## Questions
 
-  If you have any questions about the application you can contact undefined directly @ undefined
-  
+If you have any questions about the application you can contact brianlfarmerllc directly @ brianlfarmerllc@gmail.com

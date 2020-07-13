@@ -1,55 +1,51 @@
 function generateMarkdown(data) {
   return `
-  # ${data.title}
+# ${data.title}
 
-  [![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)](${data.repo})
+[![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)](${data.repo})
   
-  ## Description
+## Description
 
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
   
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Technologies](#Technologies)
-  * [License](#License)
-  * [Contributions](#Contributions)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Technologies](#Technologies)
+* [License](#License)
+* [Contributions](#Contributions)
   
-  ## Installation
+## Installation and Usage
 
-  ${data.install}
+${data.install}
 
-  ## Usage
+The following image demonstrates the application functionality:
 
-  ${data.usage}
+![Demo of ${data.title}!](${data.path})
 
-  The following image demonstrates the application functionality:
+## Technologies
 
-  ![Add Description !!!!!!](${data.path})
+The following technologies were used in the developement of the application
 
-  ## Technologies
+${data.tech}
 
-  The following technologies were used in the developement of the application
+## License
 
-  ${data.tech}
+This application is licensed under the ${data.license} license
 
-  ## License
+## Contributors
 
-  This application is licensed under the ${data.license} license
-
-  ## Contributors
-
-  Contributor information and commit history can be seen here!
-  <a href="https://github.com/${data.repo}/graphs/contributors">
-    <img src="https://contributors-img.web.app/image?repo=${data.username}/${data.title}" />
-  </a>
+Contributor information and commit history can be seen here!
+<a href="https://github.com/${data.repo}/graphs/contributors">
+<img src="https://contributors-img.web.app/image?repo=${data.username}/${data.title}" />
+</a>
 
 
-  ## Questions
+## Questions
 
-  If you have any questions about the application you can contact ${data.username} directly @ ${data.email}
-  `;
+If you have any questions about the application you can contact ${data.username} directly @ ${data.email}
+`;
 }
 
 module.exports = generateMarkdown;

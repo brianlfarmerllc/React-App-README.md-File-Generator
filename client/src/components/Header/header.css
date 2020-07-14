@@ -15,7 +15,7 @@ header span {
     color: #418ce0
 }
 
-h1 {
+h1, h2 {
 	font-family: Impact, sans-serif;
 	font-size: 60px;
 	margin-bottom: 30px;

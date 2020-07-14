@@ -7,7 +7,7 @@ function Form(props) {
             <div className=" col-11 col-xl-8">
                 <div className="form">
                     <div className="form-header">
-                        <h1>readme generator</h1>
+                        <h2>readme generator</h2>
                     </div>
                     <div className="form-content">
                         <form>

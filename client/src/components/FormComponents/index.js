@@ -41,3 +41,20 @@ export function Text(props) {
         </div>
     );
 }
+
+export function Select(props) {
+    return (
+        <div className="form-group">
+            <label htmlFor={props.htmlFor}>{props.label}</label>
+            <select className="form-select"
+                type={props.type}
+                name={props.name}
+                onChange={props.handleChange}
+            >
+                <option value="" defaultValue>Choose Yes or No</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+    );
+}

@@ -46,6 +46,19 @@
     font-weight: 500;
   }
 
+  .form-group select {
+    height: 3em;
+    outline: none;
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+  }
+
   .form-group button {
     outline: none;
     background: #418ce0;
@@ -61,7 +74,7 @@
   .form-header {
     margin: 0 0 40px;
   }
-  .form-header h1 {
+  .form-header h2 {
     padding: 4px 0;
     color: #4285F4;
     font-size: 30px;

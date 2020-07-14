@@ -5,7 +5,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import Form from "../../components/Form";
 import { FormBtn } from "../../components/FormComponents";
 
-function Done({setForm, initalForm}) {
+function Done({ setForm, initalForm,setModal }) {
     let history = useHistory();
     let location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
@@ -16,6 +16,7 @@ function Done({setForm, initalForm}) {
             .then(res => {
                 download(res.data, "README.md")
                 setForm(initalForm)
+                setModal(true)
                 history.replace(from)
             })
             .catch(err => {
@@ -23,10 +24,25 @@ function Done({setForm, initalForm}) {
             })
 
     }
+    function handleReturn(event) {
+        event.preventDefault()
+        setForm(initalForm)
+        setModal(true)
+        history.replace(from)
+    }
     return (
         <Form>
             <h3 style={{ textAlign: "center" }}>Your README was Successfully Created</h3>
-            <FormBtn onClick={handleSubmit}>download readme</FormBtn>
+            <div className="row">
+                <div className="col">
+                    <FormBtn onClick={handleSubmit}>download readme</FormBtn>
+                </div>
+                <div className="col">
+                    <FormBtn onClick={handleReturn}>Start Over</FormBtn>
+                </div>
+
+
+            </div>
         </Form>
     )
 }

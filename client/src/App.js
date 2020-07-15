@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import { Input, Select } from "./components/FormComponents";
+import { Select } from "./components/FormComponents";
 import Form from "./components/Form"
 import Header from "./components/Header";
 import Form1 from "./pages/Form1";
@@ -36,13 +36,15 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Form1 form={form} handleChange={handleChange} />
+            <Form1 form={form} handleChange={handleChange} 
+            published={published}/>
           </Route>
           <Route exact path="/details">
             <Form2 form={form} handleChange={handleChange} />
           </Route>
           <Route exact path="/done">
-            <Done setForm={setForm} initalForm={initalForm} setModal={setModal}/>
+            <Done setForm={setForm} initalForm={initalForm} 
+            setModal={setModal} setPublished={setPublished}/>
           </Route>
         </Switch>
       </main>

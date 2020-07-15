@@ -5,7 +5,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import Form from "../../components/Form";
 import { FormBtn } from "../../components/FormComponents";
 
-function Done({ setForm, initalForm,setModal }) {
+function Done({ setForm, initalForm, setModal, setPublished }) {
     let history = useHistory();
     let location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
@@ -17,6 +17,7 @@ function Done({ setForm, initalForm,setModal }) {
                 download(res.data, "README.md")
                 setForm(initalForm)
                 setModal(true)
+                setPublished("")
                 history.replace(from)
             })
             .catch(err => {
@@ -28,6 +29,7 @@ function Done({ setForm, initalForm,setModal }) {
         event.preventDefault()
         setForm(initalForm)
         setModal(true)
+        setPublished("")
         history.replace(from)
     }
     return (

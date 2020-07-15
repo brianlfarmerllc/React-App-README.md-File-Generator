@@ -1,8 +1,13 @@
 function generateMarkdown(data) {
+  
+ const siteBadge = ` [![${data.service} URL](https://img.shields.io/badge/${data.service}-URL-purple.svg)](${data.site})`
+ const none = ` [![Portfolio URL](https://img.shields.io/badge/portfolio-URL-green.svg)](https://brianlfarmerllc.github.io/No_Express_React_Portfolio/)`
+
   return `
 # ${data.title}
 
-[![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)](${data.repo})
+[![Site License](https://img.shields.io/badge/license-${data.license}-blue.svg)](${data.repo})
+${data.service && data.site ? siteBadge : none}
   
 ## Description
 

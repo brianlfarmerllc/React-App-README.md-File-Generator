@@ -13,6 +13,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
+  "homepage": "https://readme-creator.herokuapp.com/",
   "keywords": [],
   "author": "Brian Farmer",
   "license": "MIT",

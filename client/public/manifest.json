@@ -1,0 +1,15 @@
+{
+    "short_name": "README Creator",
+    "name": "PWA README Creator",
+    "icons": [
+        {
+            "src": "/images/33.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

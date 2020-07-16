@@ -36,7 +36,7 @@ router
 router
   .route("./serviceWorker.js")
   .get((req, res) => {
-    res.sendFile(path.resolve(__dirname,  "../client/build/serviceWorker.js"));
+    res.sendFile(path.resolve(__dirname,  "../client/build/serviceworker.js"));
   })
 
 // If no API routes are hit, send the React app

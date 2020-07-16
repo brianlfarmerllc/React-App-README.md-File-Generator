@@ -1,12 +1,13 @@
 const express = require("express");
 const routes = require("./routes");
-const logger = require('morgan');
+const sslRedirect = require('heroku-ssl-redirect');
 
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
 const app = express();
-app.use(logger('dev'));
+// enable ssl redirect
+app.use(sslRedirect());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));

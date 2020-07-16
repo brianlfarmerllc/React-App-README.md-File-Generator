@@ -33,6 +33,12 @@ router
     })
   })
 
+router
+  .route("./serviceWorker.js")
+  .get((req, res) => {
+    res.sendFile(path.resolve(__dirname,  "../client/build/serviceWorker.js"));
+  })
+
 // If no API routes are hit, send the React app
 router.use((req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));

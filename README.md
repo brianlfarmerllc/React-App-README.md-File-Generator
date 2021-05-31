@@ -117,8 +117,8 @@ I think this is a project I can have fun editing as my README.md files change. A
 
 ### Useful resources
 
-[Express res.download](http://expressjs.com/en/api.html#res.download) - Good resourse to read about not only the download method but all the methods in the req and res object
-[Download.Js](https://www.npmjs.com/package/downloadjs) - NPM for Download.JS Great tool and easy to use.
+- [Express res.download](http://expressjs.com/en/api.html#res.download) - Good resourse to read about not only the download method but all the methods in the req and res object.
+- [Download.Js](https://www.npmjs.com/package/downloadjs) - NPM for Download.JS Great tool and easy to use.
 
 ## Author
 
